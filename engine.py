@@ -3,7 +3,6 @@ import win32com.client
 from mydatabase import *
 import re
 from datetime import datetime
-import json
 
 min_stay = 3
 
@@ -86,15 +85,6 @@ def process():
                         print("E-posta gönderilirken bir hata oluştu:", str(e))
     else:
         print("Zaten okundu ve e-posta gönderildi.")
-    # return {
-    #     "names_str": names_str,
-    #     "ages_str": ages_str,
-    #     "date1": date1,
-    #     "date2": date2,
-    #     "days": days,
-    #     "voucher_no_str": voucher_no_str,
-    #     "sender_mail_address": sender_mail_address
-    # }
 
 
 def job():
