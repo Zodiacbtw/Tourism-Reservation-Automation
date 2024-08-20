@@ -4,7 +4,7 @@ from PIL import ImageTk, Image, ImageEnhance
 from mydatabase import *
 
 
-WINDOW_TITLE = "Rezervasyon Takip Sistemi"
+WINDOW_TITLE = "Turizm Rezervasyon Otomasyonu"
 
 
 window = tk.Tk()
@@ -97,16 +97,15 @@ def is_input_digit(answer):
 
 
 tab_control = initialize_tab_control(window)
-tab1 = create_and_add_tab(tab_control, "Sekme 1")
-tab2 = create_and_add_tab(tab_control, "Sekme 2")
+tab1 = create_and_add_tab(tab_control, "Rezervasyon")
 
 canvas1 = Canvas(tab1)
 canvas1.pack(fill="both", expand=True)
 canvas1.create_image(0, 0, image=bg_image, anchor="nw")
 
-canvas2 = Canvas(tab2)
-canvas2.pack(fill="both", expand=True)
-canvas2.create_image(0, 0, image=bg_image, anchor="nw")
+# canvas2 = Canvas(tab2)
+# canvas2.pack(fill="both", expand=True)
+# canvas2.create_image(0, 0, image=bg_image, anchor="nw")
 
 minimum_konaklama_label = tk.Label(tab1, text="Minimum Konaklama Süresi Giriniz")
 minimum_konaklama_label.place(x=75, y=70, width=190, height=25)

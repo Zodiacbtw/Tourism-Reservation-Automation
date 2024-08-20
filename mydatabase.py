@@ -52,8 +52,6 @@ def check_new_mails_and_insert_into_db():
         if check_email_existence(mail_id[-10:]):
             print("Bu e-posta zaten var. Alınmayacak.")
             continue
-        subject = message.Subject
-        body = message.body
         attachments = message.Attachments
         if message.Class == 43:
             sender_mail_address = message.SenderEmailAddress

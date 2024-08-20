@@ -4,8 +4,6 @@ from mydatabase import *
 import re
 from datetime import datetime
 
-min_stay = 3
-
 
 def process():
     imlec.execute("SELECT FilePath FROM RezervasyonTb WHERE IsRead = ?", (False,))
